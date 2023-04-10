@@ -1,0 +1,333 @@
+@font-face {
+  font-family: "vt220";
+  src: url("fonts/vt220.ttf") format("truetype");
+}
+
+body {
+  background-color: #1c1c1c;
+  color: #00ff00;
+  font-family: "vt220", monospace;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 7%;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #fff;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li:before {
+  content: "$ ";
+}
+
+header li:before {
+  content: "/ ";
+}
+
+a {
+  color: #00ff00;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 2px dashed #fff;
+  opacity: 0.5;
+}
+
+section {
+  margin-bottom: 7%;
+}
+
+#terminal-container {
+  margin: 20px auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-top: 6%;
+}
+
+#presentacion p:before {
+  content: "$ ";
+}
+
+#skills li:before {
+  content: "$ ";
+}
+
+#contacto li:before {
+  content: "$ ";
+}
+
+#proyectos article {
+  background-color: #1c1c1c;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.terminal-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid green;
+  text-decoration: none;
+  font-family: "vt220", monospace;
+  font-size: 19px;
+}
+
+.terminal-btn i {
+  margin-right: 10px;
+}
+
+.terminal-btn:hover {
+  opacity: 0.3;
+}
+.neofetch-container {
+  background-color: #1c1c1c;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.neofetch-container img {
+  margin-right: 10%;
+  max-width: 30%;
+  border: 5px dashed #00ff00;
+  border-radius: 200px;
+}
+
+.neofetch-data {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.neofetch-data P {
+  border-bottom: 1.5px dashed #4d4d4d;
+  padding: 5px 0;
+}
+
+.neofetch-colors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 400px;
+}
+
+.color-block:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.black p {
+  color: black;
+}
+
+.red p {
+  color: red;
+}
+
+.yellow p {
+  color: yellow;
+}
+
+.green p {
+  color: green;
+}
+
+.blue p {
+  color: blue;
+}
+
+.magenta p {
+  color: magenta;
+}
+
+.cyan p {
+  color: cyan;
+}
+
+.white p {
+  color: white;
+}
+
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-group {
+  width: 31%;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-group {
+    width: 48%;
+  }
+}
+
+.desplegable:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.contenido {
+  display: none;
+}
+
+#comando {
+  font-size: 18px;
+}
+
+.activo {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .neofetch-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .neofetch-container img {
+    margin-right: 0;
+    margin-bottom: 10%;
+  }
+
+  .neofetch-colors {
+    margin-left: 200px;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #social-menu {
+    display: none;
+  }
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  border-bottom: 2px dashed #fff;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.proyect {
+  text-decoration: none;
+}
+
+.proyect:hover {
+  opacity: 0.3;
+}
+
+
+#social-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 100px;
+  height: 200px;
+  background-color: #1c1c1c;
+  z-index: 9999;
+  margin-left: 2%;
+}
+
+#social-menu a {
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#social-menu li {
+  list-style: none;
+}
+
+#social-menu a:hover {
+  opacity: 0.3;
+}
