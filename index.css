@@ -331,3 +331,9 @@ nav {
 #social-menu a:hover {
   opacity: 0.3;
 }
+
+@media (max-width: 800px) {
+  #barra li a {
+    font-size: 20px;
+  }
+}
